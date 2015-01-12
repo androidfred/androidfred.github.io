@@ -33,6 +33,7 @@ h6 {
     color: #333333;
     /*background: url(../img/bg.jpg) no-repeat center center;*/
     background-size: cover;
+    font-weight:400;
 }
 
 .intro-message {
@@ -55,6 +56,10 @@ h6 {
 
 .intro-message > h3 {
     /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
+}
+
+.intro-message > p {
+    font-size: 1.25em;
 }
 
 @media(max-width:767px) {
