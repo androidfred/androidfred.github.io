@@ -1,6 +1,6 @@
 # Landing Page Jekyll theme
 
-Jekyll theme based on [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page) adapted to Jekyll by [Jerome Lachaud](https://github.com/jeromelachaud/freelancer-theme).
+Jekyll theme based on [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page) adapted to Jekyll by [Shane Weng](https://github.com/swcool/landing-page-theme).
 
 ## License
 The contents of this repository are licensed under the [Apache
