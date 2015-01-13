@@ -5,6 +5,6 @@ category: Services
 title: SciPro
 description: |
   <p class="lead">E-learning app used for all theses writing at <a target="_blank" href="http://dsv.su.se">DSV, Stockholm University</a>.</p>
-  <p class="lead">As part of the agile development team between 2011-2014, I was assigned increasingly more responsibility and roles, including requirements, designer, full-stack Java developer and Team Leader. During this time, the app won awards and reached international recognition and use.</p>
-  <p class="lead">Tools and technologies used include JIRA and Bugzilla, Balsamiq Mockups, HTML, CSS, AJAX, Twitter Bootstrap, Java, IntelliJ IDEA, Maven, Jenkins, JUnit, CheckStyle, FindBugs, Apache and Jetty, MySQL, Spring, Hibernate, QueryDSL, Wicket, Shibboleth, Lombok, various REST APIs and many others.</p>
+  <p class="lead">As part of the agile development team between 2011-2014, I was assigned increasingly more responsibility and roles, including Requirements, Designer, Full-stack Java Developer and Team Leader. During this time, the app won awards and reached international recognition and use.</p>
+  <p class="lead">Tools and technologies used include JIRA and Bugzilla, Balsamiq Mockups, HTML, CSS, AJAX, Twitter Bootstrap, Java, IntelliJ IDEA, Maven, Jenkins, Sonar,JUnit, CheckStyle, FindBugs, Apache and Jetty, MySQL, Spring, Hibernate, QueryDSL, Wicket, Shibboleth, Lombok, various REST APIs and many others.</p>
 ---

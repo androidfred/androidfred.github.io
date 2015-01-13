@@ -6,5 +6,4 @@ title: Bulb
 description: |
   <p class="lead">I have many ideas for apps and needed some way to track, score and rank them. Until now, I've just been mailing myself any ideas I think up, but now that mail monologue has grown to 100+ messages long. It's disorganized and doesn't scale well, so I coded up <a target="_blank" href="http://bulb.bedobi.com">bulb</a> as a solution and as a way to familiarize myself with JavaScript and MEAN.JS. Check out the <a target="_blank" href="http://github.com/androidfred/ideit">source code</a> at <a target="_blank" href="http://github.com/androidfred">my GitHub</a></p>
   <p class="lead">Tools and technologies used include HTML, CSS, Twitter Bootstrap, JavaScript, mongoDB, AngularJS, Express, Node.js, Bower, Grunt, Mocha, Karma, Cloud9 IDE, Heroku, CodeClimate, Travis and Shippable and others.</p>
-
 ---
