@@ -1,4 +1,4 @@
-# Landing Page Jekyll theme
+## Theme
 
 Jekyll theme based on [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page) adapted to Jekyll by [Shane Weng](https://github.com/swcool/landing-page-theme).
 
