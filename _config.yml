@@ -26,6 +26,6 @@ social:
   - title: github
     url: https://github.com/androidfred
     icon: github
-  - title: blog
-    url: http://blog.bedobi.com
-    icon: pencil
+  - title: resume
+    url: https://docs.google.com/document/d/1DaAX7Vtol9FLeXiUEBpGxO7mkfMzVZb5zYwdzVMBb2o
+    icon: file-text-o
