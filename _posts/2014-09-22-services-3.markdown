@@ -1,0 +1,9 @@
+---
+layout: default
+img: calculatorround.png
+category: Services
+title: Position Calculator
+description: |
+  <p class="lead">Free, <a target="_blank" href="http://github.com/androidfred/angulator">open source</a> <a target="_blank" href="http://positioncalculator.bedobi.com">trading calculator</a> for fixed percent risk position sizing.</p>
+---
+

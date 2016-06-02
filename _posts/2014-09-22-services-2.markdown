@@ -1,9 +1,0 @@
----
-layout: default
-img: calculatorround.png
-category: Services
-title: Position Calculator
-description: |
-  <p class="lead">I couldn't find a free trading calculator for fixed percent risk position sizing, so I wrote and released one. Free, open source, non-commercial. Check it out <a target="_blank" href="http://positioncalculator.bedobi.com">positioncalculator.bedobi.com</a>. <a target="_blank" href="http://github.com/androidfred/positionweb">Front end</a> and <a target="_blank" href="http://github.com/androidfred/positioncalculator">back end</a> source code available on <a target="_blank" href="http://github.com/androidfred">my GitHub page</a>.</p>
-  <p class="lead">Tools and technologies used include Balsamiq Mockups, HTML, CSS, AJAX, Twitter Bootstrap, Java, IntelliJ IDEA, Maven, JUnit, CheckStyle, FindBugs, Jetty, Wicket, Heroku and others.</p>
----
