@@ -1,0 +1,9 @@
+---
+layout: default
+img: guveraround.png
+category: Services
+title: Guvera
+description: |
+  <p class="lead">2015-2016: Project Lead Software Engineer at music streaming startup Guvera.</p>
+  
+---

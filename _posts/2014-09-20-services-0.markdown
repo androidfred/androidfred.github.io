@@ -1,9 +1,0 @@
----
-layout: default
-img: ctm.png
-category: Services
-title: Compare The Market
-description: |
-  <p class="lead">2016-Current: Senior Software Developer at <a target="_blank" href="http://comparethemarket.com.au">Compare The Market</a>, an insurance aggregator.</p>
-  
----

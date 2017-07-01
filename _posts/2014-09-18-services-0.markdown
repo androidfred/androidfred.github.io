@@ -1,0 +1,9 @@
+---
+layout: default
+img: expedia.png
+category: Services
+title: Expedia
+description: |
+  <p class="lead">2017-Current: Senior Software Developer Engineer at <a target="_blank" href="http://expedia.com">Expedia</a>.</p>
+  
+---

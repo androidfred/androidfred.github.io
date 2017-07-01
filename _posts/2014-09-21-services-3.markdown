@@ -1,0 +1,10 @@
+---
+layout: default
+img: sciproround.png
+category: Services
+title: SciPro
+description: |
+  <p class="lead">2011-2015: Team Lead Full-Stack Developer at <a target="_blank" href="http://su.se">Stockholm University</a>. Turned in-house-only e-learning app SciPro into award-winning, internationally used app.</p>
+
+---
+

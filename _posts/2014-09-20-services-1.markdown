@@ -1,9 +1,0 @@
----
-layout: default
-img: guveraround.png
-category: Services
-title: Guvera
-description: |
-  <p class="lead">2015-2016: Project Lead and Software Developer at <a target="_blank" href="http://guvera.com">Guvera</a>, an award-winning global music streaming service with tens of millions of users.</p>
-  
----
