@@ -1,0 +1,13 @@
+name: Deploy to bedobi.com
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p ~/.ssh; echo "${{ secrets.DEPLOY_SSH_KEY }}" | base64 -d > ~/.ssh/id_ed25519; chmod 600 ~/.ssh/id_ed25519; ssh-keyscan -H 159.203.85.176 >> ~/.ssh/known_hosts 2>/dev/null
+          rsync -az -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" index.html root@159.203.85.176:/var/www/bedobi/index.html
