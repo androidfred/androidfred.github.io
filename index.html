@@ -4,64 +4,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bedobi — Fredrik Friis</title>
-  <meta name="description" content="Fredrik Friis — Senior Software Developer, Engineer and Project Lead. Design, Develop, Use.">
+  <meta name="description" content="Fredrik Friis — Senior Software Engineer. Over a decade across the whole software stack.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>⬢</text></svg>">
   <style>
     :root{
       --bg:#0d1117; --panel:#161b22; --line:#272e3a;
-      --fg:#e6edf3; --muted:#9aa6b2; --accent:#58a6ff; --accent-2:#3fb950;
-      --maxw:760px;
+      --fg:#e6edf3; --muted:#9aa6b2; --accent:#58a6ff; --accent-2:#3fb950; --maxw:760px;
     }
     @media (prefers-color-scheme: light){
       :root{ --bg:#fbfcfd; --panel:#fff; --line:#e6e9ee; --fg:#1b2430; --muted:#5b6776; --accent:#0a66c2; --accent-2:#1a7f37; }
     }
     *{box-sizing:border-box}
     html{-webkit-text-size-adjust:100%}
-    body{
-      margin:0; background:var(--bg); color:var(--fg);
-      font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      letter-spacing:.1px;
-    }
+    body{margin:0; background:var(--bg); color:var(--fg);
+      font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; letter-spacing:.1px}
     .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
+    a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+    svg{display:block}
 
-    header{padding:72px 0 28px}
-    .brand{font-size:13px; letter-spacing:.28em; text-transform:uppercase; color:var(--muted); margin:0 0 18px}
-    h1{font-size:clamp(34px,7vw,52px); line-height:1.05; margin:0 0 10px; font-weight:700}
-    .role{font-size:clamp(16px,2.6vw,20px); color:var(--muted); margin:0 0 22px; font-weight:500}
-    .bio{font-size:17px; max-width:62ch; color:var(--fg); margin:0 0 26px}
+    header{padding:64px 0 26px}
+    .brand{font-size:13px; letter-spacing:.28em; text-transform:uppercase; color:var(--muted); margin:0 0 10px}
+    h1{font-size:clamp(30px,6vw,46px); line-height:1.05; margin:0 0 8px; font-weight:700}
+    .role{font-size:clamp(15px,2.4vw,19px); color:var(--muted); margin:0 0 18px; font-weight:500}
+    .bio{font-size:17px; max-width:60ch; margin:0 0 22px}
 
-    .links{display:flex; flex-wrap:wrap; gap:10px; margin:0 0 4px; padding:0; list-style:none}
-    .links a{
-      display:inline-flex; align-items:center; gap:8px;
-      border:1px solid var(--line); background:var(--panel); color:var(--fg);
-      padding:9px 15px; border-radius:999px; font-size:14px; font-weight:500;
-    }
+    .links{display:flex; flex-wrap:wrap; gap:10px; margin:0; padding:0; list-style:none}
+    .links a{display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line);
+      background:var(--panel); color:var(--fg); padding:8px 14px; border-radius:999px; font-size:14px; font-weight:500}
     .links a:hover{border-color:var(--accent); color:var(--accent); text-decoration:none}
+    .links svg{width:16px; height:16px; fill:currentColor}
 
-    .divider{height:1px; background:var(--line); border:0; margin:44px 0 30px}
+    .divider{height:1px; background:var(--line); border:0; margin:40px 0 28px}
+    section h2{font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); margin:0 0 16px; font-weight:600}
 
-    section h2{font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); margin:0 0 18px; font-weight:600}
-
-    .item{padding:18px 0; border-bottom:1px solid var(--line)}
+    .item{display:flex; gap:15px; padding:16px 0; border-bottom:1px solid var(--line)}
     .item:last-child{border-bottom:0}
-    .item .top{display:flex; flex-wrap:wrap; gap:6px 12px; align-items:baseline}
-    .item h3{margin:0; font-size:18px; font-weight:650}
-    .item .when{color:var(--muted); font-size:14px; font-variant-numeric:tabular-nums}
-    .item p{margin:6px 0 0; color:var(--muted); max-width:64ch}
+    .badge{flex:0 0 auto; width:42px; height:42px; border-radius:11px; color:#fff;
+      display:flex; align-items:center; justify-content:center; font-weight:700; font-size:18px}
+    .item .body{min-width:0}
+    .top{display:flex; flex-wrap:wrap; gap:4px 12px; align-items:baseline}
+    .item h3{margin:0; font-size:17px; font-weight:650}
+    .when{color:var(--muted); font-size:13px; font-variant-numeric:tabular-nums}
+    .where{color:var(--muted); font-size:13px}
+    .item p{margin:4px 0 0; color:var(--muted); font-size:14px; max-width:60ch}
 
-    .feature{
-      display:block; margin-top:26px; padding:20px 22px;
-      border:1px solid var(--line); border-left:3px solid var(--accent-2);
-      border-radius:12px; background:var(--panel);
-    }
+    .feature{display:flex; gap:15px; align-items:center; margin-top:24px; padding:18px 20px;
+      border:1px solid var(--line); border-left:3px solid var(--accent-2); border-radius:12px; background:var(--panel)}
     .feature:hover{text-decoration:none; border-color:var(--accent-2)}
-    .feature h3{margin:0 0 4px; font-size:18px; color:var(--fg)}
-    .feature p{margin:0; color:var(--muted)}
+    .feature .badge{background:var(--accent-2)}
+    .feature h3{margin:0 0 2px; font-size:17px; color:var(--fg)} .feature p{margin:0; color:var(--muted); font-size:14px}
     .feature .go{color:var(--accent-2); font-weight:600}
 
-    footer{color:var(--muted); font-size:13px; padding:40px 0 56px; border-top:1px solid var(--line); margin-top:44px}
+    footer{color:var(--muted); font-size:13px; padding:38px 0 56px; border-top:1px solid var(--line); margin-top:40px}
   </style>
 </head>
 <body>
@@ -70,14 +64,14 @@
     <header>
       <p class="brand">Bedobi · Design, Develop, Use</p>
       <h1>Fredrik Friis</h1>
-      <p class="role">Senior Software Developer, Engineer &amp; Project Lead</p>
-      <p class="bio">Over a decade of experience across the whole software life cycle and stack —
-        from functional-style programming to architecting microservices with Docker and AWS to
+      <p class="role">Senior Software Engineer</p>
+      <p class="bio">Over a decade across the whole software life cycle and stack — from
+        functional-style programming to architecting microservices with Docker and AWS to
         scale applications to millions of users.</p>
       <ul class="links">
-        <li><a href="mailto:fre.and.fri@gmail.com">✉ Email</a></li>
-        <li><a href="https://github.com/androidfred" rel="me noopener">⌥ GitHub</a></li>
-        <li><a href="https://docs.google.com/document/d/1xKLSoiRCl5eJbUR6-seefyGJXT1H6bVE0IJQ_fLvt8Y" rel="noopener">▤ Résumé</a></li>
+        <li><a href="mailto:fre.and.fri@gmail.com"><svg viewBox="0 0 24 24"><path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5zm2 .5v.4l8 5 8-5v-.4H4zm16 2.3-7.5 4.7a1 1 0 0 1-1 0L4 7.8V19h16V7.8z"/></svg>Email</a></li>
+        <li><a href="https://github.com/androidfred" rel="me noopener"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 8.8 21.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>GitHub</a></li>
+        <li><a href="https://docs.google.com/document/d/1xKLSoiRCl5eJbUR6-seefyGJXT1H6bVE0IJQ_fLvt8Y" rel="noopener"><svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V7h3.5L13 3.5zM8 12h8v1.5H8V12zm0 3.5h8V17H8v-1.5zM8 8.5h4V10H8V8.5z"/></svg>Résumé</a></li>
       </ul>
     </header>
 
@@ -87,30 +81,44 @@
       <h2 id="experience">Experience</h2>
 
       <div class="item">
-        <div class="top"><h3>Expedia</h3><span class="when">2017 – Present</span></div>
-        <p>Senior Software Developer Engineer.</p>
+        <span class="badge" style="background:#e8590c">T</span>
+        <div class="body"><div class="top"><h3>Toast</h3><span class="when">2023 – Present</span><span class="where">· Remote (US)</span></div>
+          <p>Senior Software Engineer.</p></div>
       </div>
       <div class="item">
-        <div class="top"><h3>Compare the Market</h3><span class="when">2016 – 2017</span></div>
-        <p>Senior Software Engineer at the insurance aggregator.</p>
+        <span class="badge" style="background:#f0a020">G</span>
+        <div class="body"><div class="top"><h3>Grindr</h3><span class="when">2023</span><span class="where">· Remote (US)</span></div>
+          <p>Senior Software Engineer.</p></div>
       </div>
       <div class="item">
-        <div class="top"><h3>Guvera</h3><span class="when">2015 – 2016</span></div>
-        <p>Project Lead Software Engineer at the music-streaming startup.</p>
+        <span class="badge" style="background:#1668e3">E</span>
+        <div class="body"><div class="top"><h3>Expedia Group</h3><span class="when">2017 – 2023</span><span class="where">· Brisbane, Australia</span></div>
+          <p>Senior Software Developer.</p></div>
       </div>
       <div class="item">
-        <div class="top"><h3>SciPro · Stockholm University</h3><span class="when">2011 – 2015</span></div>
-        <p>Team Lead Full-Stack Developer. Turned the in-house-only e-learning app SciPro into an
-          award-winning, internationally used product.</p>
+        <span class="badge" style="background:#0ca678">C</span>
+        <div class="body"><div class="top"><h3>Compare the Market</h3><span class="when">2016 – 2017</span></div>
+          <p>Senior Software Engineer at the insurance aggregator.</p></div>
+      </div>
+      <div class="item">
+        <span class="badge" style="background:#7048e8">G</span>
+        <div class="body"><div class="top"><h3>Guvera</h3><span class="when">2015 – 2016</span></div>
+          <p>Project Lead Software Engineer at the music-streaming startup.</p></div>
+      </div>
+      <div class="item">
+        <span class="badge" style="background:#2f9e44">S</span>
+        <div class="body"><div class="top"><h3>SciPro · Stockholm University</h3><span class="when">2011 – 2015</span></div>
+          <p>Team Lead Full-Stack Developer. Turned the in-house e-learning app SciPro into an
+            award-winning, internationally used product.</p></div>
       </div>
     </section>
 
     <section aria-labelledby="projects">
-      <h2 id="projects" style="margin-top:36px">Projects</h2>
+      <h2 id="projects" style="margin-top:34px">Projects</h2>
       <a class="feature" href="https://positioncalculator.bedobi.com" rel="noopener">
-        <h3>Position Calculator</h3>
-        <p>A free, open-source trading calculator for fixed-percent-risk position sizing.
-          <span class="go">Open it →</span></p>
+        <span class="badge">∑</span>
+        <div><h3>Position Calculator</h3>
+          <p>Free, open-source trading calculator for fixed-percent-risk position sizing. <span class="go">Open it →</span></p></div>
       </a>
     </section>
 
